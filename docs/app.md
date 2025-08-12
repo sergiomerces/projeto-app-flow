@@ -26,7 +26,7 @@ Podcasts feitos em video
 
 ### Como vou implementar
 
-Vou retornar uma API rest o nome do podcast, nome do episódio, imagem de capa, link
+GET: retornar uma API rest o nome do podcast, nome do episódio, imagem de capa, link
 
 ```js
 {
