@@ -1,8 +1,13 @@
-import {IncomingMessage, ServerResponse} from 'http';
+import { IncomingMessage, ServerResponse } from 'http';
 
+//obter lista de episódios do podcast
+export const getListEpisodes = (req: IncomingMessage, res: ServerResponse)=> {
 
-export const getListEpisodes = ()=> {
-  return (request: IncomingMessage, response: ServerResponse) => {
+    //escrever no cabeçalho
+    res.writeHead(200, {"content-type": 'application/json'});
+    //escrever no conteúdo
+    res.end({
+      name: 'Sérgio',
+    });
     
   };
-}
