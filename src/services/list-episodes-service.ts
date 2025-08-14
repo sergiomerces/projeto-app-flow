@@ -1,20 +1,10 @@
+import { repositoryPodcast } from "../repositories/poscast-repository";
 
 
 
 
 export const serviceListEpisodes = async () => {
-    const data = [{
-        podcastName: "flow",
-        episode: "RENATO CARIANI TIRA SUAS DÚVIDAS SOBRE TREINOS, NUTRIÇÃO E VIDA SAUDÁVEL [Especialista Responde]",
-        videoId:"8UYGt274qvc",
-        categories: ["saúde", "bodybuild"],
-    },
-    {
-        podcastName: "flow",
-        episode: "NIKOLAS FERREIRA - Flow #475",
-        videoId: "kf6XzyqpaE8",
-        categories: ["política", 'notícia'],
-    }]
+    const data = await repositoryPodcast();
 
     return data;
 }
