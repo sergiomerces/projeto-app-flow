@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "preinstall": "npm install",
     "start:dev": "tsx --env-file=.env src/server.ts",
-    "start:watch": "tsx ----env-file=.env watch src/server.ts",
+    "start:watch": "tsx watch --env-file=.env src/server.ts",
     "start": "node dist/index.js",
     "dist": "tsup src",
     "start:dist": "npm run dist && --env-file=.env node/server.js"
@@ -21,7 +22,6 @@
   "keywords": [],
   "author": "Sérgio Merces",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/sergiomerces/projeto-app-flow/issues"
   },
