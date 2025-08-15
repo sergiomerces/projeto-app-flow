@@ -48,3 +48,5 @@ GET: retornar uma API rest o nome do podcast, nome do episódio, imagem de capa,
 };
 
 ```
+
+GET: retorna lista de episódios baseado em um parâmetro enviado pelo cliente do nome do podcast.

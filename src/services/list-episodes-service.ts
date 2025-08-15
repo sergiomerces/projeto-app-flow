@@ -1,4 +1,4 @@
-import { repositoryPodcast } from "../repositories/poscast-repository";
+import { repositoryPodcast } from "../repositories/podcast-repository";
 
 
 
