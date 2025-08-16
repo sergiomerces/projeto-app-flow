@@ -5,11 +5,14 @@ import { getFilterEpisodes, getListEpisodes } from './controllers/podcast-contro
 const server = http.createServer(
     async (req: http.IncomingMessage, res:http.ServerResponse) => {
 
-        if(req.method === 'GET' && req.url === 'api/list'){
+        //query string
+        const [baseUrl, queryString] = req.url?.split('?') ?? ['', ''];
+
+        if(req.method === 'GET' && req.url === '/api/list'){
             await getListEpisodes(req, res);
         }
 
-        if(req.method === 'GET' && req.url === 'api/episode'){
+        if(req.method === 'GET' && req.url === '/api/episode'){
             await getFilterEpisodes(req, res);
         }
 
